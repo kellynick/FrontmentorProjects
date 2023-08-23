@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color:hsl(0, 0%, 100%);
+    --background-color:hsl(217, 54%, 11%);
+    --card-background:hsl(216, 50%, 16%);
+    --line-color:hsl(215, 32%, 27%);
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan-color:hsl(178, 100%, 50%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Outfit";
+    color: var(--white-color);
+}
+
+.section-container{
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    background-color: var(--background-color);
+}
+
+
+
+.main-container{
+    max-width: 40rem;
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.image-container{
+    background-image:url(images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.image-container-inner{
+    height: 100%;
+    background-color: rgba(2, 252, 252, 0.4);
+    border-radius: 1rem;
+    backdrop-filter: blur(.3rem);
+    opacity: 0;
+    /* display: none; */
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.image-container-inner img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container-inner:hover{
+    opacity: 1;
+    /* display: block; */
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 30rem;
+}
+
+.text-container h1{
+    font-size: 2.2rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.text-container h1:hover{
+    color:var(--cyan-color);
+}
+.text-container p{
+    font-size: 1.8rem;
+    word-spacing: .2rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+
+}
+
+.text-container-inner{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.text-container-inner-one{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--cyan-color);
+}
+
+.text-container-inner-one span{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.text-container-inner-two{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-blue);
+}
+
+.text-container-inner-two span{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+.text-container-footer img{
+    width:3.2rem;
+    border: .18rem solid #fff;
+    border-radius: 50%;
+}
+
+.text-container-footer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-top:.1rem solid var(--line-color);
+    padding-top: 1.8rem;
+}
+
+.text-container-footer p{
+    color: var(--soft-blue);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.text-container-footer span{
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.text-container-footer span:hover{
+    color:var(--cyan-color);
+}
+
+
+@media(max-width:30em){
+    .section-container{
+        padding: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
