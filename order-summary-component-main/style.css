@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display";
+}
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+    --soft-blue:hsl(215, 51%, 70%)
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    background-image: url(./order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    background-color: var(--pale-blue);
+    padding: 3rem;
+}
+
+.main-container{
+    max-width: 35rem;
+    border-radius: 2rem;
+    background-color: var(--very-pale-blue);
+    overflow: hidden;
+}
+
+.container-text{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+}
+
+.container-text h1{
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 900;
+}
+.container-text-p{
+    text-align:center;
+    font-size: 1.6rem;
+    color:var(--desaturated-blue);
+}
+
+.container-text-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:hsl(225, 100%, 96%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.container-text-inner-two{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.container-text-inner-two h3{
+    font-size: 1.6rem;
+    font-weight: 900;
+
+}
+
+.container-text-inner-two span{
+    font-size: 1.6rem;
+    color: var(--desaturated-blue);
+
+}
+
+.container-text-inner-three a{
+    color: var(--bright-blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: all 2s;
+    cursor: pointer;
+
+}
+
+.container-text-inner-three a:hover{
+    text-decoration: none;
+    color:hsl(245, 75%, 64%);
+}
+
+button{
+    padding: 1.6rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-shadow: 0 1rem 2rem var(--pale-blue);
+    transition: all 2s;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: hsl(245, 75%, 64%);
+}
+
+.container-text-p2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: all 2s;
+    color: var(--desaturated-blue);
+}
+
+.container-text-p2:hover{
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+@media(max-width:30em){
+    .container{
+        background-image: url(../5_Front_end_mentor_project/order-summary-component-main/images/pattern-background-mobile.svg);
+    }
+
+    html{
+        font-size: 56.25%;
+    }
+}
