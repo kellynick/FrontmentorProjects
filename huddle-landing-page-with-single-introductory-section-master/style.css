@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Open Sans";
+}
+
+.background-section{
+    background-image: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-position: left;
+    background-size: contain;
+    min-height: 100vh;
+    place-content: center;
+    display: grid;
+    background-color: hsl(257, 40%, 49%);
+    padding: 3rem 0;
+}
+
+.container{
+    display: grid;
+    /* grid-template-columns: 60rem 34rem; */
+    grid-template-columns: 65rem 1fr;
+    /* gap: 2rem; */
+    max-width: 110rem;
+    /* justify-content: center; */
+    /* padding: 3rem 5rem; */
+
+}
+
+.first-inner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.first-inner-container img:nth-child(1){
+    width: 30%;
+}
+.first-inner-container img:nth-child(2){
+    width: 100%;
+}
+
+.second-inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+.second-inner-container-pad h1{
+    color: #fff;
+    font-size: 3.2rem;
+}
+
+.second-inner-container-pad{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* margin-top: 14rem; */
+}
+
+.second-inner-container-pad p{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.second-inner-container-button{
+    padding: 1.5rem 4rem;
+    text-align: left;
+    width: fit-content;
+    border-radius: 4rem;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 .7rem 1rem rgba(0, 0, 0, 0.6);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.second-inner-container-button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.flex-socials-container{
+    display: flex;
+    justify-content: end;
+}
+
+.socials-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon{
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .3rem;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.icon:nth-child(2):hover{
+    color: hsl(300, 69%, 71%);
+    border:1px solid hsl(300, 69%, 71%) ;
+
+}
+
+@media (max-width:70em){
+    html{
+        font-size: 56.25%;
+    }
+    .second-inner-container-pad h1{
+        font-size: 3.2rem;
+    }
+
+    .second-inner-container-pad p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:62.5em){
+    
+    html{
+        font-size: 50%;
+    }
+    .second-inner-container-pad h1{
+        font-size: 3.6rem;
+    }
+
+    .second-inner-container-pad p{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:57em){
+    
+    html{
+        font-size: 44%;
+    }
+    .second-inner-container-pad h1{
+        font-size: 3.8rem;
+    }
+
+    .second-inner-container-pad p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:49.4em){
+    
+    html{
+        font-size: 37%;
+    }
+    .second-inner-container-pad h1{
+        font-size: 3.8rem;
+    }
+
+    .second-inner-container-pad p{
+        font-size: 2.2rem;
+    }
+
+    .icon{
+    font-size: 2.4rem;
+
+    }
+}
+
+@media (max-width:41.9em){
+    
+    html{
+        font-size: 31.25%;
+    }
+    .second-inner-container-pad h1{
+        font-size: 3.8rem;
+    }
+
+    .second-inner-container-pad p{
+        font-size: 2.4rem;
+    }
+    .icon{
+        font-size: 3rem;
+    
+    }
+}
+
+@media(max-width:35em){
+    .container{
+        grid-template-columns:1fr;
+        padding: 3rem;
+        /* justify-content: center; */
+    }
+    .first-inner-container img:nth-child(1){
+        width: 40%;
+    }
+    .first-inner-container img:nth-child(2){
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .second-inner-container-pad{
+        align-items: center;
+        gap: 4rem;
+    }
+    .second-inner-container-pad h1{
+        font-size: 7rem;
+        text-align: center;
+    }
+
+    .second-inner-container-pad p{
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .second-inner-container-button{
+        padding: 2rem 12rem;
+        /* width: 20rem; */
+    }
+    .flex-socials-container{
+        justify-content: center;
+    }
+
+    .first-inner-container{
+        gap: 8rem;
+    }
+    .second-inner-container-pad{
+        gap: 6rem;
+    }
+    
+}
+    @media(max-width:26em){
+        html{
+            font-size: 25%;
+        }
+        .second-inner-container-pad h1{
+            font-size: 6.8rem;
+            text-align: center;
+        }
+    
+        .second-inner-container-pad p{
+            font-size: 4.1rem;
+            text-align: center;
+        }
+        .second-inner-container-button{
+            padding: 3rem 20rem;
+            border-radius: 6rem;
+        }
+        .icon{
+            font-size:5rem;
+            padding: .5rem;
+        }
+    }
