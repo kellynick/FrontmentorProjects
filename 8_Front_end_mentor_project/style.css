@@ -1,0 +1,1423 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* body{
+
+ 
+} */
+:root{
+    --Dark-blue-mainbackground:hsl(218, 28%, 13%);
+    --Dark-blue-footer:hsl(216, 53%, 9%);
+    --Dark-blue-testimonial:hsl(219, 30%, 18%);
+    --light-red-error:hsl(0, 100%, 63%);
+    --white:hsl(0, 0%, 100%);
+}
+
+
+.main-section{
+    min-height: 100vh;
+    display: grid;
+    position: relative;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    font-family: "Raleway";
+    background-color:hsl(217, 28%, 15%) ;
+
+
+}
+.Logo-section img{
+    width: 70%;
+}
+.header-menu{
+    display: flex;
+    gap: 5rem;
+}
+
+
+.header-menu a{
+    text-decoration: none;
+    color: var(--white);
+    font-size:1.4rem ;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.header-menu a:hover{
+    /* text-decoration: underline; */
+    font-weight: 700;
+    /* background-color: red; */
+    border-bottom: 1px solid ;
+}
+
+.hero-section-background{
+    background-color:hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway";
+
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 3rem;
+    /* background-color: green; */
+    max-width: 70rem;
+    margin-bottom: 5rem;
+
+}
+
+.hero-image img{
+    width: 50rem;
+}
+
+.hero-text-one{
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 400;
+}
+.hero-text-two{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--white);
+    line-height:2.2rem;
+    width: 41rem;
+}
+
+.hero-section button{
+    padding:1.5rem 5rem;
+    border-radius: 3rem;
+    border: none;
+    color: var(--white);
+    font-weight: 400;
+    background-image: linear-gradient(to right , hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.hero-section button:hover{
+    background-image: linear-gradient(hsl(176, 68%, 64%) , hsl(176, 68%, 64%));
+
+}
+
+.services-section-background{
+    background-color: var(--Dark-blue-mainbackground);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Raleway";
+
+
+}
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    max-width: 70rem;
+    gap: 5rem;
+    margin-bottom: 9rem;
+
+}
+.services-section-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.services-section-inner h3{
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.services-section-inner p{
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.services-section-inner:nth-child(2){
+    gap: 1.4rem;
+}
+.productive-section-text-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productive-section-background{
+    background-color: var(--Dark-blue-mainbackground);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.productive-section{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    max-width: 90rem;
+    gap: 6rem;
+    font-family: "Raleway";
+    margin-bottom: 9rem;
+}
+
+
+.productive-section-image img{
+    width: 100%;
+}
+
+.productive-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--white);
+}
+.productive-section-text h1{
+    font-size: 3rem;
+}
+.productive-section-text p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.productive-section-anchor{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: .5px solid hsl(176, 68%, 64%);
+    padding-bottom: .5rem;
+    width: 34%;
+    /* background-color: green; */
+}
+
+.productive-section-anchor:hover{
+    border-bottom: .5px solid var(--white);
+    padding-bottom: .5rem;
+}
+.productive-section-anchor a{
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* background-color: red; */
+}
+.productive-section-anchor a:hover{
+    color: white;
+}
+
+
+.arrowicon{
+    font-size: 2rem;
+    color: hsl(176, 68%, 64%);
+}
+
+.arrowicon:hover{
+    color: var(--white);
+}
+.testimonials-background{
+    background-color: var(--Dark-blue-mainbackground);
+    display: flex;
+    justify-content: center;
+}
+
+
+.testimonials{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 2rem;
+    font-family: "Raleway";
+    color: var(--white);
+    margin-bottom:30rem;
+    max-width: 90rem;
+    position: relative;
+    justify-items: center;
+}
+
+/* .testimonials::after{
+    content: url(../8_Front_end_mentor_project/fylo-dark-theme-landing-page-master/images/bg-quotes.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -10%;
+    z-index: 1;
+} */
+
+.testimonial-quote{
+    position: absolute;
+    z-index: 0;
+    top:-17%;
+    left: 0;
+}
+
+.testimonial-content{
+    background-color: var(--Dark-blue-testimonial);
+    border-radius: 1rem;
+    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 2;
+    /* flex-wrap: wrap; */
+}
+
+
+.testimonial-content p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.testimonial-content-inner img{
+    width: 15%;
+    border-radius: 100%;
+}
+
+.testimonial-content-inner{
+    display: flex;
+    gap: 1.4rem;
+}
+.testimonial-content-text h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.testimonial-content-text p{
+    font-size: 1rem;
+}
+
+.testimonial-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.get-early-section{
+    background-color: var(--Dark-blue-mainbackground);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--white);
+    font-family: "Raleway";
+    padding: 5rem 3rem 4rem 3rem;
+    position: absolute;
+    height: 9%;
+    width: 46%;
+    bottom: 13%;
+    left: 27%;
+    box-shadow: 1rem .1rem 3rem rgb(0, 0, 0,0.3);
+}
+.get-early-section h1{
+    font-size: 2.8rem;
+    text-align: center;
+
+}
+.papa{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.get-early-section-form{
+    display: flex;
+    gap: 2rem;
+}
+
+#get-early-section-input{
+    border-radius: 2rem;
+    width: 35rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    outline: none;
+    height: 4.2rem;
+
+
+}
+.get-early-section-form button{
+    padding: 2rem;
+    width: 18rem;
+    border-radius:2rem ;
+    border: none;
+    background-image: linear-gradient(to right , hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.4rem;
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#get-early-section-input::placeholder{
+    font-size: 1.3rem;
+    outline: none;
+    color:#999;
+}
+
+.error-message{
+    color: hsl(0, 100%, 63%);
+    font-size: 1.2rem;
+    padding: 1rem 0 0 2rem;
+    display: none;
+}
+
+
+
+.footer-section-background{
+    background-color: var(--Dark-blue-footer);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20rem 6rem 6rem 6rem;
+}
+
+.footer-section{
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: "Raleway";
+}
+
+.footer-section-grid{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    column-gap: 2rem;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.footer-section-firstimage{
+    width: 15%;
+}
+.footer-section-grid-one img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-section-grid-one{
+    display: flex;
+    gap: 1rem;
+    grid-column: span 2;
+}
+
+
+.footer-section-grid-one p{
+    line-height: 2rem;
+}
+
+.footer-section-grid-two ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    list-style:none;
+    margin-right: 6rem;
+}
+
+.footer-section-grid-two ul li{
+    display: flex;
+    gap: 1rem;
+}
+.footer-section-grid-three ul , .footer-section-grid-four ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    list-style:none;
+}
+
+.footer-section-grid-five ul{
+    display: flex;
+    gap: 1rem;
+    list-style:none;
+    font-size: 1.8rem;
+}
+
+.footer-section-grid-five ul li{
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+.footer-section-grid-five ul li:hover{
+    color: hsl(176, 68%, 64%);
+    border: 1px solid  hsl(176, 68%, 64%);
+
+}
+/*1258px*/
+@media (max-width:78.8em){
+
+    .get-early-section{
+        width: 50%;
+        left: 25%;
+    }
+
+}
+
+
+@media (max-width:73em){
+
+    .get-early-section{
+        width: 54%;
+        left: 23%;
+    }
+}
+
+@media (max-width:67em){
+
+    .get-early-section{
+        width: 58%;
+        left: 21%;
+    }
+}
+@media (max-width:62.5em){
+
+    .get-early-section{
+        width: 62%;
+        left: 19%;
+        bottom: 13%;
+    }
+
+    .productive-section{
+        width: 72rem;
+    }
+    .productive-section-anchor{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        border-bottom: .5px solid hsl(176, 68%, 64%);
+        padding-bottom: .5rem;
+        width: 43%;
+    }
+
+    .testimonials{
+        width: 72rem;
+
+    }
+
+    #get-early-section-input{
+        width:28rem;
+
+    }
+    .get-early-section-form button{
+        width:18rem;
+
+    }
+
+    .testimonial-quote{
+        top:-15.5%;
+    }
+
+    .testimonial-content-inner img{
+        width:20%;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width:58.5em){
+    /* html{
+        font-size: 57%;
+    } */
+    .testimonial-quote{
+        top:-18%;
+        left: 0;
+    }
+    #get-early-section-input{
+        width:30rem;
+
+    }
+    .get-early-section-form button{
+        width:20rem;
+
+    }
+
+    .testimonial-quote{
+        top:-15.5%;
+    }
+}
+@media (max-width:53.2em){
+    /* html{
+        font-size: 50%;
+    } */
+    .testimonial-quote{
+        top:-15.5%;
+    }
+
+    .productive-section{
+        max-width: 80rem;
+    }
+
+    .testimonials{
+        max-width: 80rem;
+        
+    }
+
+    #get-early-section-input{
+        width: 26rem;
+        /* height: 4.5rem; */
+    }
+    .get-early-section-form button{
+        width: 17rem;
+        /* height: 4.5rem; */
+
+    }
+}
+
+@media(max-width:52.4em){
+    .get-early-section{
+        /* width: 54%; */
+        /* left: 23%; */
+        bottom: 14%;
+    }
+}
+
+@media(max-width:49.6em){
+    .get-early-section{
+        height: 8%;
+        width: 70%;
+        bottom: 16%;
+        left: 16%;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+}
+
+@media(max-width:49em){
+    .header-menu a{
+        font-size: 2rem;
+    }
+    .services-section{
+        grid-template-columns: 1fr;
+        max-width: 50rem;
+    }
+    .services-section-inner h3{
+        font-size: 3rem;
+    }
+    .services-section-inner p{
+        font-size: 1.3rem;
+        /* line-height: 2rem; */
+    }
+    .hero-text-one{
+        font-size: 2.2rem;
+        width: 45rem;
+    }
+    .productive-section{
+        grid-template-columns: 1fr;
+        max-width: 70rem;
+    }
+
+    .productive-section-image{
+        display: flex;
+        justify-content: center;
+    } 
+    .productive-section-image img{
+        width: 80%;
+    }
+    .testimonials{
+        grid-template-columns: 1fr;
+        max-width: 70rem;
+        margin-bottom: 40rem;
+    }
+
+    .get-early-section{
+        height: 6.5%;
+        width: 70%;
+        bottom: 16%;
+        left: 16%;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+
+    .papa{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding: 0 5rem 0 5rem;
+    }
+   
+    .get-early-section-form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+
+    #get-early-section-input{
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        height: 4rem;
+        width:40rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 1.6rem;
+
+    }
+    .get-early-section-form button{
+        height: 4rem;
+        width:40rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+
+
+    }
+
+    .testimonial-content{
+        background-color: var(--Dark-blue-testimonial);
+        border-radius: 1rem;
+        padding: 3rem 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        max-width: 40rem;
+        /* align-content: center; */
+    }
+
+    .testimonial-content p{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .testimonial-content h4{
+        font-size: 1.6rem;
+    }
+
+    .footer-section-grid{
+        grid-template-columns: 1fr;
+        gap: 6rem;
+        font-size: 1.6rem;
+
+    }
+    .footer-section-firstimage{
+        width: 60%;
+
+    }
+
+    .footer-section{
+        max-width: 70rem;
+    }
+
+    .footer-section-grid-one{
+        display: flex;
+        gap: 2rem;
+        grid-column:span 1;
+
+    }
+
+    .footer-section-grid-five ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .productive-section-text{
+        padding: 1rem;
+        max-width: 40rem;
+        gap: 2rem;
+    }
+    .productive-section-text h1{
+        font-size: 3.2rem;
+        /* text-align: center; */
+    
+    }
+    .productive-section-text p{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .productive-section-anchor{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        border-bottom: .5px solid hsl(176, 68%, 64%);
+        padding-bottom: .5rem;
+        width:47%;
+    }
+    .productive-section-anchor a{
+        font-size: 1.6rem;
+        
+    }
+    
+    .services-section-inner h3{
+        text-align: center;
+        font-size: 3.2rem;
+    }
+    .services-section-inner p{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding: 2rem;
+    }
+    .hero-section{
+        padding: 3rem;
+    }
+
+    .hero-text-one{
+        font-size: 2.4rem;
+    }
+
+    .hero-text-two{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+
+    }
+
+    .testimonial-quote{
+        top:-4.5%;
+        left: 22%;
+    }
+
+    .testimonial-content-inner img{
+        width: 15%;
+        border-radius: 100%;
+    }
+
+    .error-message{
+        font-size: 1.4rem;
+        padding: 1rem 0 0 1rem;
+    }
+}
+
+@media(max-width:44em){
+    .get-early-section{
+        left:7.5rem;
+        width: 80%;
+        height: 6.3%;
+
+    }; 
+}
+
+@media(max-width:41em){
+    #get-early-section-input{
+        height: 4rem;
+        width:35rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+
+    }
+    .get-early-section-form button{
+        height: 4rem;
+        width:35rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+    }
+
+    .get-early-section{
+        left:9rem;
+        width: 80%;
+        height: 6.5%
+
+    };
+}
+
+@media(max-width:37.5em){
+    .get-early-section{
+        width: 100%;
+        bottom: 17%;
+        left:10%;
+        height: 6.9%
+
+    }
+    .footer-section-background{
+        padding: 24rem 6rem 6rem 6rem;
+        
+    }
+
+    #get-early-section-input{
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        height: 6rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2rem;
+
+    }
+    .get-early-section-form button{
+        height: 6rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 5rem;
+    }
+
+    .footer-icon{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:34.5em){
+    .get-early-section{
+        left:5rem;
+        width:110%
+    }; 
+    #get-early-section-input{
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        height: 5rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2rem;
+
+    }
+    .get-early-section-form button{
+        height: 5rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 5rem;
+    }
+    .error-message{
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:31.9em){
+    .get-early-section{
+        left:5rem;
+        width:120%;
+        bottom: 16.5%;
+        height: 7%
+
+    }
+
+    .papa{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #get-early-section-input{
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        height: 6rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        border-radius: 5rem;
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2rem;
+
+    }
+    .get-early-section-form button{
+        height: 6rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 5rem;
+    }
+    .hero-text-one{
+        font-size: 2.4rem;
+        line-height: 5rem;
+    }
+
+    .hero-text-two{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .hero-section button{
+        font-size: 2.2rem;
+    }
+    .services-section-inner h3{
+        font-size: 3.2rem;
+    }
+    .services-section-inner p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .productive-section-text p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .productive-section-anchor{
+        font-size: 2rem;
+
+    }
+
+
+    .testimonial-content p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .testimonial-content h4{
+        font-size: 2rem;
+
+    }
+    .testimonials{
+        margin-bottom: 40rem;
+    }
+
+    .testimonial-quote{
+        top:-3.5%;
+        left: 22%;
+    }
+
+    .footer-section-grid{
+        font-size: 2rem;
+    }
+    .footer-section-grid-one p{
+        line-height: 3rem;
+    }
+
+    .error-message{
+        font-size: 1.6rem;
+    }
+
+
+}
+
+@media(max-width:30em){
+    .get-early-section{
+        left:5rem;
+        width:120%;
+        padding: 5rem 0 5rem 0;
+
+    }
+
+    .papa{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #get-early-section-input{
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        height: 6rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        border-radius: 5rem;
+
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2rem;
+
+    }
+    .get-early-section-form button{
+        height: 6rem;
+        width:45rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 5rem;
+
+
+
+    }
+    .hero-text-one{
+        font-size: 2.4rem;
+        line-height: 5rem;
+    }
+
+    .hero-text-two{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .hero-section button{
+        font-size: 2.2rem;
+    }
+    .services-section-inner h3{
+        font-size: 3.2rem;
+    }
+    .services-section-inner p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .productive-section-text p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .productive-section-anchor{
+        font-size: 2rem;
+
+    }
+
+
+    .testimonial-content p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .testimonial-content h4{
+        font-size: 2rem;
+
+    }
+    .get-early-section{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .testimonial-quote{
+        top:-5%;
+    }
+
+    .testimonial-quote img{
+        width: 130%;
+    }
+    /* .testimonials{
+        margin-bottom: 0rem;
+    } */
+
+    .error-message{
+        font-size: 1.6rem;
+    }
+
+}
+
+@media(max-width:28.8em){
+    .get-early-section{
+        left:3rem;
+        width:140%;
+        padding: 5rem 0 5rem 0;
+
+    }
+
+    .papa{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #get-early-section-input{
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        height: 6rem;
+        width:50rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2rem;
+
+    }
+    .get-early-section-form button{
+        height: 6rem;
+        width:50rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 5rem;
+    }
+    .hero-text-one{
+        font-size: 2.4rem;
+        line-height: 5rem;
+    }
+
+    .hero-text-two{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .hero-section button{
+        font-size: 2.2rem;
+    }
+    .services-section-inner h3{
+        font-size: 3.2rem;
+    }
+    .services-section-inner p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .productive-section-text p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .productive-section-anchor{
+        font-size: 2rem;
+
+    }
+
+
+    .testimonial-content p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .testimonial-content h4{
+        font-size: 2rem;
+
+    }
+    .get-early-section{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .testimonial-quote{
+        top:-5%;
+    }
+
+    .testimonial-quote img{
+        width: 130%;
+    }
+
+    .error-message{
+        font-size: 1.6rem;
+    }
+
+}
+
+@media(max-width:26.9em){
+    .get-early-section{
+        left:4rem;
+        width:150%;
+        height: auto;
+        padding: 5rem 0 5rem 0;
+        gap: 4rem;
+        bottom: 16%;
+
+    }
+
+    .papa{
+        font-size: 2.2rem;
+        line-height: 3.4rem;
+    }
+
+    .get-early-section h1{
+        font-size: 3.8rem;
+    }
+
+
+
+    #get-early-section-input{
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        height: 6rem;
+        width:50rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2rem;
+
+    }
+    .get-early-section-form button{
+        height: 6rem;
+        width:50rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 5rem;
+    }
+
+    .hero-text-one{
+        font-size: 2.4rem;
+        line-height: 5rem;
+    }
+
+    .hero-text-two{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .hero-section button{
+        font-size: 2.2rem;
+    }
+    .services-section-inner h3{
+        font-size: 3.2rem;
+    }
+    .services-section-inner p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .productive-section-text p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .productive-section-anchor{
+        font-size: 2rem;
+
+    }
+
+
+    .testimonial-content p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .testimonial-content h4{
+        font-size: 2rem;
+
+    }
+    .get-early-section{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .testimonial-quote{
+        top:-5%;
+    }
+
+    .testimonial-quote img{
+        width: 130%;
+    }
+
+    .testimonials{
+        margin-bottom: 50rem;
+    }
+
+
+}
+
+@media(max-width:25em){
+    .get-early-section{
+        left:3rem;
+        width:160%;
+        height: auto;
+        padding: 5rem 0 5rem 0;
+        gap: 4rem;
+    }
+    .get-early-section h1{
+        font-size: 4rem;
+    }
+
+    .papa{
+        font-size: 2.2rem;
+        line-height: 4rem;
+    }
+
+    #get-early-section-input{
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        height: 7rem;
+        width:55rem;
+        padding: 2.2rem 1rem 2.2rem 2rem;
+
+    }
+
+    #get-early-section-input::placeholder{
+        font-size: 2.4rem;
+
+    }
+    .get-early-section-form button{
+        height: 7rem;
+        width:55rem;
+        padding: 2.2rem 1rem 2.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
+        border-radius: 5rem;
+    }
+    .get-early-section-form{
+        display: flex;
+        gap: 3rem;
+    }
+    .hero-text-one{
+        font-size: 2.4rem;
+        line-height: 5rem;
+    }
+
+    .hero-text-two{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .hero-section button{
+        font-size: 2.2rem;
+    }
+    .services-section-inner h3{
+        font-size: 3.2rem;
+    }
+    .services-section-inner p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .productive-section-text p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .productive-section-anchor{
+        font-size: 2rem;
+
+    }
+
+
+    .testimonial-content p{
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .testimonial-content h4{
+        font-size: 2rem;
+
+    }
+
+    .testimonial-quote{
+        top:-5%;
+    }
+
+    .testimonial-quote img{
+        width: 130%;
+    }
+    /* .testimonials{
+        margin-bottom: 60rem;
+    } */
+
+    .footer-section-grid{
+        font-size: 2.4rem;
+    }
+
+    .error-message{
+        font-size: 2rem;
+    }
+
+}
